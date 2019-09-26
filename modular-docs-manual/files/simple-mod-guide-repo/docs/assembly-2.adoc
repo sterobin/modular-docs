@@ -1,0 +1,13 @@
+:parent-context: {context}
+
+[id="assembly-2-{context}"]
+= Assembly 2
+:context: assembly-2
+
+include::modules/module-a.adoc[leveloffset=+1]
+
+include::modules/module-b.adoc[leveloffset=+1]
+
+include::modules/module-d.adoc[leveloffset=+1]
+
+:context: {parent-context}
