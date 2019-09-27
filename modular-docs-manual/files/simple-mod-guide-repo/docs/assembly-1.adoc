@@ -1,4 +1,4 @@
-:parent-context: {context}
+ifdef::context[:parent-context: {context}]
 
 [id="assembly-1-{context}"]
 = Assembly 1
@@ -10,4 +10,5 @@ include::modules/module-b.adoc[leveloffset=+1]
 
 include::modules/module-c.adoc[leveloffset=+1]
 
-:context: {parent-context}
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
